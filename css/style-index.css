@@ -13,21 +13,26 @@
     src: url("../resources/fonts/JosefinSans.ttf");
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
     #header-nav {
         flex-direction: column !important;
+        height: auto !important;
+        position: absolute !important;
     }
     #replica{
         flex-direction: column !important;
+        min-width: 110px !important;
+        height: auto !important;
+        display: none;
     }
 
     h2{
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
 
     .menu-item{
-        padding-top: 6px !important;
-        margin-bottom: 0px !important;
+        margin: 0px !important;
+        padding: 0px !important;
     }
 }
 
@@ -54,7 +59,19 @@
     .content-move{
         display: none !important;
     }
-    
+
+}
+
+@media only screen and (max-width:1300px){
+    #header-nav {
+        height: auto !important;
+    }
+
+    #replica{
+        min-width: 110px !important;
+        height: auto !important;
+        display: none;
+    }
 }
 
 body{
@@ -67,22 +84,26 @@ body{
     flex-direction: column;
 }
 
+/* header - nav */
+
 #header-nav{
     position: fixed;
     width: 100%;
+    height: 65px;
+    min-height: 65px;
     background-image: url("../resources/imgs/madera-blanca.jpg");
-    min-height: 11vh;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    background-size: 300px 300px;
-    border-bottom: 2px solid black;
+    background-size: 440px 300px;
+    border-bottom: 2px solid #f4f3ef;
 }
 
 #replica{
     width: 100%;
+    height: 65px;
     background-color: white;
     display: flex;
     justify-content: space-evenly;
@@ -92,18 +113,23 @@ body{
 }
 
 .menu-item{
-    height: 30px;
+    min-width: 200px;
+    height: 50px;
     display: flex;
     align-items: center;
-    padding-top: 30px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    justify-content: center;
+    margin-top: 15px;
+    background-image: url("../resources/imgs/marco-items.png");
+    background-size: 150px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .logo{
-    min-width: 239px;
-    height: 90px;
-    background-image: url("../resources/imgs/marco.png");
+    min-width: 210px;
+    height: 79px;
+    margin-top: 20px;
+    background-image: url("../resources/imgs/marco-madera.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -116,18 +142,21 @@ body{
 
 h1{
     font-family: "Flow";
-    font-size: 38px;
+    font-size: 35px;
     margin-top: 0;
     margin-top: 10px;
+    text-shadow: 0 0 3px #fff;
 }
 
 h2 {
-    font-family: "Brannboll";
+    font-family: "JosefinSans";
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     transition: color 0.2s, border 0.1s;
     cursor: pointer;
 }
+
+/* body */
 
 .body{
     background-color: white;
@@ -179,7 +208,7 @@ h2 {
 
     background-image: url("../resources/imgs/background.jpg");
     background-size: cover;
-    border: 2px solid black;
+    border: 0.1px solid black;
     border-radius: 2px;
 }
 
@@ -209,14 +238,6 @@ h2 {
     align-items: center;
 }
 
-#footer{
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 a{
     text-decoration: none;
     color: black;
@@ -234,10 +255,76 @@ a{
     transition:background-color 0.2s;
 }
 
-.dot-link:hover{
+.current{
+    width: 10px;
+    height: 10px;
     background-color: black;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 7px;
+    transition:background-color 0.2s;
+}
+
+.dot-link:hover{
+    background-color: black !important;
 }
 
 .menu-item > h2:hover{
     color: #bc8d4b;
+    text-shadow: 0 0 3px #fff;
+}
+
+/* footer */
+
+#footer{
+    background-color: black;
+    min-height: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#footer > * {
+    color: white;
+}
+
+#footer > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border:2px solid white;
+    padding: 10px;
+    flex-wrap: wrap;
+
+}
+
+#footer > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#footer > div > div:nth-child(3){
+    margin-right: 40px;
+}
+
+#footer > div > div > span {
+    font-size: 15px;
+    font-family: "JosefinSans";
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.head{
+    font-size: 20px !important;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px !important;
 }

@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piccolo Pomdoro</title>
+    <title>Piccolo Pomodoro</title>
     <link rel="stylesheet" href="./css/style-index.css">
 </head>
 <body>
 
     <div id="header-nav">
         <div class="logo">
-            <h1>Piccolo Pomdoro</h1>
+            <h1>Piccolo Pomodoro</h1>
         </div>
         <div class="menu-item">
             <h2>Carta</h2>
@@ -28,7 +28,8 @@
             <h2>Sobre Nosotros</h2>
         </div>
     </div>
-
+    <!-- para que este el espacio exactamente igual que en el nav se crea una replica pero fija asi 
+        aunque el nav sea fixed el contenido de abajo siempre se mostrara como deberia ya que la replica no lo es-->
     <div id="replica">
         <div class="logo">
             <h1>Piccolo Pomdoro</h1>
@@ -64,7 +65,7 @@
                         </div>
                     </div>
                     <div id="available-content">
-                        <a class= "dot-link" href=""></a>
+                        <a class= "current" href=""></a>
                         <a class= "dot-link" href=""></a>
                         <a class= "dot-link" href=""></a>
                     </div>
@@ -76,11 +77,29 @@
         </div>
     </div>
     <div id="footer">
-        <div id="links">
-
+        <div>
+            <div>
+                <span class="head">Empresa</span>
+                <span> Politica de privacidad </span>
+                <span> Sobre nosotros </span>
+            </div>
+            <div>
+                <span class="head">Servicios</span>
+                <span> Pedidos </span>
+                <span> Reservas</span>
+            </div>
+            <div>
+                <span class="head">Ver y comprar</span>
+                <span> Carta </span>
+                <span> Promociones </span>
+            </div>
         </div>
         <div id="contacto">
-            
+            <div id="tarjeta-empresa">
+            </div>
+            <div id="copyright">
+
+            </div>
         </div>
     </div>
 </body>
