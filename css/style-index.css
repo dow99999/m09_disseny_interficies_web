@@ -23,7 +23,6 @@
         flex-direction: column !important;
         min-width: 110px !important;
         height: auto !important;
-        display: none;
     }
 
     h2{
@@ -70,7 +69,6 @@
     #replica{
         min-width: 110px !important;
         height: auto !important;
-        display: none;
     }
 }
 
@@ -80,80 +78,6 @@ body{
     margin: 0;
     height: 1080px;
     background-color:#1c1e1b;
-    display: flex;
-    flex-direction: column;
-}
-
-/* header - nav */
-
-#header-nav{
-    position: fixed;
-    width: 100%;
-    height: 65px;
-    min-height: 65px;
-    background-image: url("../resources/imgs/madera-blanca.jpg");
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    background-size: 440px 300px;
-    border-bottom: 2px solid #f4f3ef;
-}
-
-#replica{
-    width: 100%;
-    height: 65px;
-    background-color: white;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.menu-item{
-    min-width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-    background-image: url("../resources/imgs/marco-items.png");
-    background-size: 150px 45px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.logo{
-    min-width: 210px;
-    height: 79px;
-    margin-top: 20px;
-    background-image: url("../resources/imgs/marco-madera.png");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:#bc8d4b;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-h1{
-    font-family: "Flow";
-    font-size: 35px;
-    margin-top: 0;
-    margin-top: 10px;
-    text-shadow: 0 0 3px #fff;
-}
-
-h2 {
-    font-family: "JosefinSans";
-    font-weight: 600;
-    font-size: 20px;
-    transition: color 0.2s, border 0.1s;
-    cursor: pointer;
 }
 
 /* body */
@@ -161,8 +85,6 @@ h2 {
 .body{
     background-color: white;
     width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 #content-background{
@@ -170,26 +92,16 @@ h2 {
     height: 85vh;
     background-image: url("../resources/imgs/background-blur.png");
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 #content-index{
     min-width: 750px;
     min-height: 500px;
-    display: flex;
-    flex-direction: row;
 }
 
 .content-move{
     height: 100%;
     min-width: 60px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 #content{
@@ -201,11 +113,6 @@ h2 {
     min-width: 690px;
     height: 98%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
     background-image: url("../resources/imgs/background.jpg");
     background-size: cover;
     border: 0.1px solid black;
@@ -213,11 +120,6 @@ h2 {
 }
 
 #target{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
     background-color: rgb(0,0,0,0.8);
     min-width: 250px;
     height: 300px;
@@ -232,10 +134,6 @@ h2 {
 #available-content{
     min-width: 690px;
     height: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 a{
@@ -268,63 +166,4 @@ a{
 
 .dot-link:hover{
     background-color: black !important;
-}
-
-.menu-item > h2:hover{
-    color: #bc8d4b;
-    text-shadow: 0 0 3px #fff;
-}
-
-/* footer */
-
-#footer{
-    background-color: black;
-    min-height: 100px;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 10px;
-    flex-wrap: wrap;
-}
-
-#footer > * {
-    color: white;
-}
-
-#footer > div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border:2px solid white;
-    padding: 10px;
-    flex-wrap: wrap;
-
-}
-
-#footer > div > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    margin-top: 10px;
-}
-
-#footer > div > div:nth-child(3){
-    margin-right: 40px;
-}
-
-#footer > div > div > span {
-    font-size: 15px;
-    font-family: "JosefinSans";
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.head{
-    font-size: 20px !important;
-    border-bottom: 1px solid white;
-    margin-bottom: 20px !important;
 }

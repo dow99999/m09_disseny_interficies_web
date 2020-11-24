@@ -1,0 +1,60 @@
+#header-nav{
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    min-height: 65px;
+    background-image: url("../resources/imgs/madera-blanca.jpg");
+    background-size: 440px 300px;
+    border-bottom: 2px solid #f4f3ef;
+}
+
+#replica{
+    width: 100%;
+    height: 65px;
+    background-color: white;
+}
+
+.menu-item{
+    min-width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    background-image: url("../resources/imgs/marco-items.png");
+    background-size: 150px 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo{
+    min-width: 210px;
+    height: 79px;
+    margin-top: 20px;
+    background-image: url("../resources/imgs/marco-madera.png");
+    background-size: cover;
+    color:#bc8d4b;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logo > h1 {
+    font-family: "Flow";
+    font-size: 35px;
+    margin-top: 0;
+    margin-top: 10px;
+    text-shadow: 0 0 3px #fff;
+}
+
+.menu-item > h2{
+    font-family: "JosefinSans";
+    font-weight: 600;
+    font-size: 20px;
+    transition: color 0.2s, border 0.1s;
+    cursor: pointer;
+}
+
+.menu-item > h2:hover{
+    color: #bc8d4b;
+    text-shadow: 0 0 3px #fff;
+}
