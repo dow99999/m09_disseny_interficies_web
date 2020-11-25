@@ -191,23 +191,32 @@ a{
     height: 1400px;
     background-color: #f6f6f6;
     box-shadow: inset 0 7px 10px -5px rgba(0,0,0,0.7);
+    background-image: url("../resources/imgs/background-1.jpg");
+    height: 100%;
+    background-attachment: fixed;
 }
 
-#introduction > div:nth-child(1){
+.arrows-background{
+    width: 100%;
+    height: 150px;
+    background-color: #f6f6f6;
+}
+
+#introduction > div:nth-child(1) > div {
     width: 1200px;
     height: 50px;
     border:1px solid #bc8d4b;
     background-color: #f6f6f6;
 }
 
-#introduction > div:nth-child(1) > div {
+#introduction > div:nth-child(1) > div > div {
     width: 24px;
     height: 2px;
     background-color: #2E2E2E;
     margin-bottom: 1px;
 }
 
-#introduction > div:nth-child(1) > a > img {
+#introduction > div:nth-child(1) > div > a > img {
     transform: rotate(180deg);
     filter: invert(17%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(93%) contrast(94%);
     margin-bottom: 2px;
@@ -215,37 +224,64 @@ a{
 
 /* inversa del de arriba TODO se puede optimizar */
 
-#introduction > div:nth-child(3){
+#introduction > div:nth-child(3) > div {
     width: 1200px;
     height: 50px;
     border:1px solid #bc8d4b;
     background-color: #f6f6f6;
 }
 
-#introduction > div:nth-child(3) > div {
+#introduction > div:nth-child(3) > div > div{
     width: 24px;
     height: 2px;
     background-color: #2E2E2E;
     margin-top: -3px;
 }
 
-#introduction > div:nth-child(3) > a > img {
+#introduction > div:nth-child(3) > div > a > img {
     filter: invert(17%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(93%) contrast(94%);
     margin-top: 5px;
 }
 
+/* background del #articule */
+
+#introduction > div:nth-child(2) {
+    background-color: #f6f6f6;
+    width: 1200px;
+}
 
 #article{
-    width: 1200px;
+    width: 800px;
     height: 1000px;
     background-color: white;
-    margin-top:50px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
                 0 1px 5px 0 rgba(0,0,0,0.12),
                 0 3px 1px -2px rgba(0,0,0,0.2);
     padding: 20px;
 }
 
-#article > h2{
-    margin
+#header-art{
+    width: 100%;
+    border-bottom: 2px solid #2E2E2E;
+}
+
+#header-art > h2{
+    font-size: 40px;
+    margin:0px;
+    margin-bottom: 10px;
+}
+
+#header-art > h2::first-letter{
+    font-family: "Flow";
+    font-size: 50px;
+}
+
+#imgs-art > img{
+    height: 150px;
+    width: 150px;
+}
+
+#content-art{
+    width: 100%;
+    padding: 0px 10px 0px 10px;
 }
