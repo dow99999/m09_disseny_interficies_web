@@ -17,12 +17,8 @@
     #header-nav {
         flex-direction: column !important;
         height: auto !important;
-        position: absolute !important;
-    }
-    #replica{
-        flex-direction: column !important;
-        min-width: 110px !important;
-        height: auto !important;
+        position: static !important;
+        min-height: inherit;
     }
 
     h2{
@@ -59,15 +55,14 @@
         display: none !important;
     }
 
+    #footer > div {
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width:1300px){
     #header-nav {
-        height: auto !important;
-    }
-
-    #replica{
-        min-width: 110px !important;
         height: auto !important;
     }
 }
@@ -80,7 +75,7 @@ body{
     background-color:#1c1e1b;
 }
 
-/* body */
+/* body filter: invert(78%) sepia(9%) saturate(3040%) hue-rotate(341deg) brightness(81%) contrast(76%); */
 
 .body{
     background-color: white;
@@ -92,11 +87,21 @@ body{
     height: 85vh;
     background-image: url("../resources/imgs/background-blur.png");
     background-size: cover;
+    border-bottom: 1px solid  rgba(0,0,0,0.2);
+    
 }
 
 #content-index{
     min-width: 750px;
     min-height: 500px;
+}
+
+#previous{
+    transform: rotate(270deg);
+}
+
+#next{
+    transform: rotate(90deg);
 }
 
 .content-move{
@@ -115,7 +120,7 @@ body{
 
     background-image: url("../resources/imgs/background.jpg");
     background-size: cover;
-    border: 0.1px solid black;
+    border: 0.1px solid rgba(0,0,0,0.7);
     border-radius: 2px;
 }
 
@@ -124,10 +129,26 @@ body{
     min-width: 250px;
     height: 300px;
     color: white;
+    font-family: "JosefinSans";
+    font-size: 17px;
 }
 
 #target > h3{
-    border-bottom: 2px solid white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#target > div {
+    height: 10px;
+    width: 150px;
+    border-top: 2px solid white;
+}
+
+#target > span:nth-child(5) {
+    color: #bc8d4b;
+    font-family: "Flow";
+    font-size: 23px;
+    font-weight: bold;
 }
 
 
@@ -139,14 +160,12 @@ body{
 a{
     text-decoration: none;
     color: black;
-    background-color: black;
 }
 
 .dot-link {
     width: 10px;
     height: 10px;
     background-color: gray;
-    border: 1px solid black;
     border-radius: 50%;
     margin-top: 10px;
     margin-left: 7px;
@@ -157,7 +176,6 @@ a{
     width: 10px;
     height: 10px;
     background-color: black;
-    border: 1px solid black;
     border-radius: 50%;
     margin-top: 10px;
     margin-left: 7px;
@@ -166,4 +184,68 @@ a{
 
 .dot-link:hover{
     background-color: black !important;
+}
+
+#introduction{
+    width: 100%;
+    height: 1400px;
+    background-color: #f6f6f6;
+    box-shadow: inset 0 7px 10px -5px rgba(0,0,0,0.7);
+}
+
+#introduction > div:nth-child(1){
+    width: 1200px;
+    height: 50px;
+    border:1px solid #bc8d4b;
+    background-color: #f6f6f6;
+}
+
+#introduction > div:nth-child(1) > div {
+    width: 24px;
+    height: 2px;
+    background-color: #2E2E2E;
+    margin-bottom: 1px;
+}
+
+#introduction > div:nth-child(1) > a > img {
+    transform: rotate(180deg);
+    filter: invert(17%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(93%) contrast(94%);
+    margin-bottom: 2px;
+}
+
+/* inversa del de arriba TODO se puede optimizar */
+
+#introduction > div:nth-child(3){
+    width: 1200px;
+    height: 50px;
+    border:1px solid #bc8d4b;
+    background-color: #f6f6f6;
+}
+
+#introduction > div:nth-child(3) > div {
+    width: 24px;
+    height: 2px;
+    background-color: #2E2E2E;
+    margin-top: -3px;
+}
+
+#introduction > div:nth-child(3) > a > img {
+    filter: invert(17%) sepia(0%) saturate(0%) hue-rotate(182deg) brightness(93%) contrast(94%);
+    margin-top: 5px;
+}
+
+
+#article{
+    width: 1200px;
+    height: 1000px;
+    background-color: white;
+    margin-top:50px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+                0 1px 5px 0 rgba(0,0,0,0.12),
+                0 3px 1px -2px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+#article > h2{
+    margin
 }

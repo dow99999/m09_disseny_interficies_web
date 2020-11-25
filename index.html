@@ -10,100 +10,113 @@
     <link rel="stylesheet" href="./css/style-footer.css">
 </head>
 <body class="flex-column">
-
-    <div id="header-nav" class="flex-row wrap center space-evenly">
-        <div class="logo" class="flex-column center">
-            <h1>Piccolo Pomodoro</h1>
+    <div>
+        <div id="header-nav" class="flex-row wrap center space-evenly">
+            <div class="logo flex-column center">
+                <h1>Piccolo Pomodoro</h1>
+            </div>
+            <div class="menu-item">
+                <h2>Carta</h2>
+            </div>
+            <div class="menu-item">
+                <h2>Promociones</h2>
+            </div>
+            <div class="menu-item">
+                <h2>Pedidos</h2>
+            </div>
+            <div class="menu-item">
+                <h2>Reservas</h2>
+            </div>
+            <div class="menu-item">
+                <h2>Sobre Nosotros</h2>
+            </div>
         </div>
-        <div class="menu-item">
-            <h2>Carta</h2>
-        </div>
-        <div class="menu-item">
-            <h2>Promociones</h2>
-        </div>
-        <div class="menu-item">
-            <h2>Pedidos</h2>
-        </div>
-        <div class="menu-item">
-            <h2>Reservas</h2>
-        </div>
-        <div class="menu-item">
-            <h2>Sobre Nosotros</h2>
-        </div>
-    </div>
-    <!-- para que este el espacio exactamente igual que en el nav se crea una replica pero fija asi 
-        aunque el nav sea fixed el contenido de abajo siempre se mostrara como deberia ya que la replica no lo es-->
-    <div id="replica" class="flex-row wrap center space-evenly">
-        <div class="logo" class="flex-column center">
-            <h1>Piccolo Pomdoro</h1>
-        </div>
-        <div class="menu-item">
-            <h2>Carta</h2>
-        </div>
-        <div class="menu-item">
-            <h2>Promociones</h2>
-        </div>
-        <div class="menu-item">
-            <h2>Pedidos</h2>
-        </div>
-        <div class="menu-item">
-            <h2>Reservas</h2>
-        </div>
-        <div class="menu-item">
-            <h2>Sobre Nosotros</h2>
-        </div>
-    </div>
-
-    <div class="body" class="flex-column">
-        <div id="content-background" class="flex-column center">
-            <div id="content-index" class="flex-row">
-                <div id="previous" class="flex-column center content-move">
-                    <a href=""><=</a>
-                </div>
-                <div id="content">
-                    <div id="focus-content" class="flex-column center"> 
-                        <div id="target" class="flex-column center flex-start">
-                            <h3>Apertura del Restaurante</h3>
-                            <span> Bienvenido al restaurante </br> <span id="shiny">Piccolo Pomodoro</span> </span>
+        <div class="body" class="flex-column">
+            <div id="content-background" class="flex-column center">
+                <div id="content-index" class="flex-row">
+                    <div class="flex-column center content-move">
+                        <div><a href=""><img id="previous" src="./resources/imgs/arrow.png"></a></div>
+                    </div>
+                    <div id="content">
+                        <div id="focus-content" class="flex-column center"> 
+                            <div id="target" class="flex-column center flex-start">
+                                <h3>Apertura del Restaurante</h3>
+                                <div></div>
+                                <span> Bienvenido al restaurante </span>
+                                </br> 
+                                <span id="shiny">Piccolo Pomodoro</span>
+                            </div>
+                        </div>
+                        <div id="available-content" class="flex-row center">
+                            <a class= "current" href=""></a>
+                            <a class= "dot-link" href=""></a>
+                            <a class= "dot-link" href=""></a>
                         </div>
                     </div>
-                    <div id="available-content" class="flex-row center">
-                        <a class= "current" href=""></a>
-                        <a class= "dot-link" href=""></a>
-                        <a class= "dot-link" href=""></a>
-                    </div>
+                    <div class="flex-column center content-move">
+                        <div><a href=""><img id="next" src="./resources/imgs/arrow.png"></a></div>
+                    </div>  
                 </div>
-                <div id="next" class="flex-column center content-move">
-                    <a href="">=></a>
-                </div>  
+            </div>
+            <div id="introduction" class="flex-column center space-around">
+                
+                <div class="flex-column center flex-end">
+                    <div></div>
+                    <a href="" class="center">
+                        <img src="./resources/imgs/arrow.png">
+                    </a>
+                </div>
+                <div id="article" class="flex-row">
+                    <div id="header-art">
+                        <h2>Heading level 1</h2>
+                    </div>
+                    <div id="content-art">
+                        <span>
+                            text
+                        </span>
+                        <div id="imgs-art">
+                            <img src="">
+                            <img src="">
+                            <img src="">
+                            <img src="">
+                        </div>
+                    </div> 
+                </div>
+                <div class="flex-column center flex-start">
+                    <a href="" class="center">
+                        <img src="./resources/imgs/arrow.png">
+                    </a>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="flex-row wrap space-between">
+            <div class="flex-row wrap space-between">
+                <div class="flex-column wrap center">
+                    <span class="head">Empresa</span>
+                    <span> <a href="">Politica de privacidad</a></span>
+                    <span> <a href="">Sobre nosotros</a> </span>
+                </div>
+                <div class="flex-column wrap center">
+                    <span class="head">Servicios</span>
+                    <span> <a href="">Pedidos</a> </span>
+                    <span> <a href="">Reservas</a></span>
+                </div>
+                <div class="flex-column wrap center">
+                    <span class="head">Ver y comprar</span>
+                    <span> <a href>Carta</a> </span>
+                    <span> <a href>Promociones </a> </span>
+                </div>
+            </div>
+            <div id="contacto" class="flex-row wrap space-between">
+                <div id="tarjeta-empresa">
+                </div>
+                <div id="copyright">
+    
+                </div>
             </div>
         </div>
     </div>
-    <div id="footer" class="flex-row wrap space-between">
-        <div class="flex-row wrap space-between">
-            <div class="flex-column wrap center">
-                <span class="head">Empresa</span>
-                <span> Politica de privacidad </span>
-                <span> Sobre nosotros </span>
-            </div>
-            <div class="flex-column wrap center">
-                <span class="head">Servicios</span>
-                <span> Pedidos </span>
-                <span> Reservas</span>
-            </div>
-            <div class="flex-column wrap center">
-                <span class="head">Ver y comprar</span>
-                <span> Carta </span>
-                <span> Promociones </span>
-            </div>
-        </div>
-        <div id="contacto" class="flex-row wrap space-between">
-            <div id="tarjeta-empresa">
-            </div>
-            <div id="copyright">
 
-            </div>
-        </div>
-    </div>
 </body>
 </html>
