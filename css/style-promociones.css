@@ -1,0 +1,33 @@
+body {
+    background-image: url("../resources/imgs/background-carta.jpg");
+    background-attachment: fixed;
+}
+
+.body{
+    font-family: "JosefinSans";
+}
+
+.opaque-box{
+    background-color: #000000BB;
+    min-height: 100vh;
+}
+
+.white-box{
+    background-color: #FFFFFF;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.mr-15{
+    margin-right: 15%;
+}
+
+.ml-15{
+    margin-left: 15%;
+}
