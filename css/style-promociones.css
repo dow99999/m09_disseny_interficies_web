@@ -1,6 +1,6 @@
 body {
-    background-image: url("../resources/imgs/background-carta.jpg");
     background-attachment: fixed;
+    background-image: url("../resources/imgs/background-carta.jpg");
 }
 
 .body{
@@ -9,7 +9,6 @@ body {
 
 .opaque-box{
     background-color: #000000BB;
-    min-height: 100vh;
 }
 
 .white-box{
@@ -30,4 +29,42 @@ body {
 
 .ml-15{
     margin-left: 15%;
+}
+
+.mr-30{
+    margin-right: 30%;
+}
+
+.ml-30{
+    margin-left: 30%;
+}
+
+.promo1{
+    background-image: url("../resources/imgs/promo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promo2{
+    background-image: url("../resources/imgs/promo2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promo3{
+    background-image: url("../resources/imgs/promo3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.promo4{
+    background-image: url("../resources/imgs/promo4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.h50{
+    height: 50vh;
+}
+
+.border-promo{
+    border: solid black;
+    border-radius: 3px 3px 0px 0px;
 }
