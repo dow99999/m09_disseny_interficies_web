@@ -30,8 +30,15 @@
 .logo > h1 {
     font-family: "Flow";
     font-size: 45px;
-    margin-top: 0;
     margin-top: 10px;
+}
+
+.logo > h1 > a{
+    color: #bc8d4b;
+}
+
+.logo > h1 > a:hover{
+    text-decoration: none;
 }
 
 .menu-item > h2{
@@ -46,4 +53,10 @@
 .menu-item > h2:hover{
     color: #bc8d4b;
     text-shadow: 0 0 3px #fff;
+}
+
+.menu-item > h2 > a:hover{
+    color: #bc8d4b !important;
+    text-shadow: 0 0 3px #fff;
+    text-decoration: none;
 }

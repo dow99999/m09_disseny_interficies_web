@@ -38,3 +38,15 @@
 .flex-end{
     justify-content: flex-end;
 }
+
+.left{
+    text-align: left;
+}
+
+.rigth{
+    text-align: right;
+}
+
+.fW{
+    width: 100%;
+}

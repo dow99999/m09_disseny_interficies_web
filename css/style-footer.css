@@ -9,31 +9,58 @@
     color: white;
 }
 
-#footer > div {
-    border:2px solid white;
-    padding: 10px;
-
-}
-
-#footer > div > div {
-    margin-left: 40px;
-    margin-top: 10px;
-}
-
-#footer > div > div:nth-child(3){
-    margin-right: 40px;
-}
-
-#footer > div > div > span {
-    font-size: 15px;
-    font-family: "JosefinSans";
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
 .head{
     font-size: 20px !important;
     border-bottom: 1px solid white;
     margin-bottom: 20px !important;
 }
+
+#contacto > div{
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+    width: 100%;
+}
+
+#contacto {
+    height: 120px;
+    width: 350px;
+}
+
+#contacto > div > span{
+    text-align: initial !important;
+    margin-bottom: 0px !important;
+}
+
+#contacto > div:nth-child(1) > span{
+    margin-bottom: 15px !important;
+}
+
+#contacto > div{
+    align-items: center;
+}
+
+#contacto > div > span:nth-child(2){
+    text-align: right !important;
+}
+
+.card-b1{
+    border: 1px solid white;
+    padding: 15px;
+}
+
+.flex{
+    display: flex;
+}
+
+#services > div:nth-child(1){
+    margin-left: 20px;
+}
+
+#services > div{
+    margin-left: 40px;
+}
+
+#services > div:nth-child(3){
+    margin-right: 25px;
+}
+
