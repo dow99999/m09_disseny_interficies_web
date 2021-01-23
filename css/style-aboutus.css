@@ -1,8 +1,67 @@
 .body{
+    min-height: 92vh;
+}
+
+.body > div{
+    width: 50%;
+}
+
+.body > div > div{
+    min-height: 50%;
+    background-image: url();
+}
+
+.frame{
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+
+.cardBoard{
+    background-color: rgba(0,0,0,0.9);
+    width: 500px;
+    height: auto;
+    padding: 15px;
 }
 
 #sobreNosotros{
-    
+    background-image: url('../resources/imgs/restaurante_localizacion.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+}
+
+#sobreNosotros > div{
+    background-color: rgba(85,86,90,0.8);
+    width: 100%;
+    height: 100%;
+}
+
+#contatoData{
+    background-image: url('../resources/imgs/background-yard.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header-cardBoard{
+    background-image: url('../resources/imgs/marco_carta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 180px 100px;
+    min-height: 140px;
+    min-width: 300px;
+    font-size: 9px;
+}
+
+.header-cardBoard > div{
+    height: 100%;
+}
+
+.header-cardBoard > div > h5{
+    margin-bottom: 45px;
+}
+
+.opaque-box{
+    background-color: transparent;
+    width: 100%;
+    min-height: 79px;
 }
