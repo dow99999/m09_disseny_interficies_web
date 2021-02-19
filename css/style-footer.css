@@ -64,3 +64,25 @@
     margin-right: 25px;
 }
 
+
+audio{
+    margin-bottom: 10px;
+}
+
+#info {
+    border:1px solid white;
+    padding: 10px;
+}
+
+#info > div > i{
+    color: #17c981;
+    margin-right: 15px;
+}
+
+#info > div:nth-child(2) > i {
+    color: #16bb81;
+}
+
+#info > div:nth-child(3) > i {
+    color: #159981;
+}
