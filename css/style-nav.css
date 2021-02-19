@@ -5,6 +5,7 @@
     /*background-image: url("../resources/imgs/madera-blanca.jpg");*/
     background-color:rgba(0,0,0,0.6);
     background-size: 440px 300px;
+    z-index: 9999999;
 }
 
 .menu-item{

@@ -1,8 +1,10 @@
 
 #footer{
+    position: relative;
     background-color: #1c1e1b;
     min-height: 100px;
     padding: 10px;
+    z-index: 2;
 }
 
 #footer > * {

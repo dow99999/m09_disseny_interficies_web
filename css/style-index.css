@@ -1,9 +1,32 @@
+html{
+    overflow-x: hidden;
+}
+
+body > div:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+}
+
 body{
     top:0;
     left:0;
     margin: 0;
     height: 1080px;
     background-color:#1c1e1b;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
 }
 
 /* body filter: invert(78%) sepia(9%) saturate(3040%) hue-rotate(341deg) brightness(81%) contrast(76%); */
@@ -25,6 +48,7 @@ body{
 #content-index{
     min-width: 750px;
     min-height: 500px;
+    z-index: 2;
 }
 
 #previous{
@@ -255,3 +279,5 @@ a{
     padding-bottom: 15px;
     margin-top: 50px;
 }
+
+
