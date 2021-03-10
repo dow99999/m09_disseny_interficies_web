@@ -1,3 +1,27 @@
+@keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+}
+
+details{
+    margin-left: -1.55vw;
+}
+
+details:not([open])
+{
+    margin-right: 50px;
+    margin-left: -1.55vw;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+summary{
+    outline: none;
+}
+
+
 #header-nav{
     position: fixed;
     width: 100%;
@@ -8,12 +32,17 @@
     z-index: 9999999;
 }
 
+#header-nav > div:nth-child(1){
+    margin-top: 0px;
+}
+
+#header-nav > div {
+    margin-top: 15px;
+}
+
 .menu-item{
     min-width: 200px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    min-height: 50px;
     background-size: 150px 45px;
     background-position: center;
     background-repeat: no-repeat;
