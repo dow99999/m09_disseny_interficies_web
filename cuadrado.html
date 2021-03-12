@@ -4,17 +4,118 @@
 <head>
   <meta charset='utf-8'>
   <title>Tasques</title>
-  <link rel='stylesheet' type='text/css' href='first.css'>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style-shortcuts.css">
+  <link rel="stylesheet" href="./css/style-nav.css">
+  <link rel="stylesheet" href="./css/style-footer.css">
+  <link rel="stylesheet" href="./css/style-body.css">
+  <link rel='stylesheet' type='text/css' href='./css/cuadrado.css'>
+  
 </head>
 
 <body>
+  <header id="header-nav" class="flex-row wrap space-evenly">
+    <div class="logo flex-column center">
+        <h1 class="flex-column center"><a href="index.html">Piccolo Pomodoro</a></h1>
+    </div>
+    <div class="menu-item">
+        <h2><a class="text-light" href="carta.html">Carta <i class="fas fa-clipboard-list"></i></a></h2>
+    </div>
+    <div class="menu-item">
+        <h2>
+        <details>
+            <summary>Promociones <i class="fas fa-percentage"></i></summary>
+            <a class="text-light" href="promociones.html">Antipasta</a><br>
+            <a class="text-light" href="promociones.html">Apertura del restaurante</a> <br>
+            <a class="text-light" href="promociones.html">Entrantes</a> <br>
+            <a class="text-light" href="promociones.html">Postres</a> <br>
+        </details>
+        </h2>
+    </div>
+    <div class="menu-item">
+        <h2><a class="text-light" href="pedidos.html">Pedidos <i class="fas fa-utensils"></i></a></h2>
+    </div>
+    <div class="menu-item">
+        <h2><a class="text-light" href="reservas.html">Reservas <i class="fas fa-book"></i></a></h2>
+    </div>
+    <div class="menu-item">
+        <h2><a class="text-light" href="aboutus.html">Sobre Nosotros <i class="fas fa-address-card"></i></a></h2>
+    </div>
+  </header>
 
-  <div id="rectangle-out">
-    <div id="rectangle"></div>
-  </div>
-  <div class="quadrat"></div>
-  <div class="quadrat"></div>
+  <section class="body flex-column center">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="rectangle-out">
+      <div id="rectangle" class="flex-column center"><span class="t-m t-blend">Rectangulo oscilante</span></div>
+    </div>
+    <div class="quadrat" class="flex-column center"><span class="t-s t-blend">Cuadrado</span></div>
+    <div class="quadrat" class="flex-column center"><span class="t-s t-blend">Amigo timido</span></div>   
+  </section>
+  
+  
+  <footer id="footer" class="flex-row wrap space-between">
+    <div id="services" class="flex-row wrap space-between card-b1">
+        <div class="flex-column wrap center">
+            <span class="head">Empresa</span>
+            <span> <a class="text-light" href="privacidad.html">Politica de privacidad</a></span>
+            <span> <a class="text-light" href="aboutus.html">Sobre nosotros</a> </span>
+        </div>
+        <div class="flex-column wrap center">
+            <span class="head">Servicios</span>
+            <span> <a class="text-light" href="pedidos.html">Pedidos</a> </span>
+            <span> <a class="text-light" href="reservas.html">Reservas</a></span>
+        </div>
+        <div class="flex-column wrap center">
+            <span class="head">Ver y comprar</span>
+            <span> <a class="text-light" href="carta.html">Carta</a> </span>
+            <span> <a class="text-light" href="promociones.html">Promociones </a> </span>
+        </div>
+    </div>
 
+    <div id="info"class="flex-column center">
+        <div class="flex-row center flex-start">
+            <i class="i-b fas fa-music"></i> 
+            <audio controls autoplay loop>
+                <source src="resources/music/background.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        
+        <div class="flex-row center flex-start">
+            <i class="i-b fas fa-music"></i> 
+            <audio controls>
+                <source src="resources/music/background_music_2.mp3" type="audio/mp3">
+            </audio>    
+        </div>
+        
+        <div class="flex-row center flex-start">
+            <i class="i-b fas fa-music"></i> 
+            <audio controls>
+                <source src="resources/music/background_music_3.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+    </div>
+    
+    <div>
+        <div id="contacto" class="flex-column wrap center card-b1">
+            <div class="flex-row space-between">
+                <span>Telefono</span>
+                <span>665 55 44 32</span>
+            </div>
+            <div class="flex-row space-between">
+                <span>Email</span>
+                <span>contacto@piccolopomodoro.com</span>
+            </div>
+        </div>
+        <span class="flex flex-end">Piccolo Pomodoro. All rights reserved.</span>
+    </div>
+
+  </footer>
 </body>
 
 </html>

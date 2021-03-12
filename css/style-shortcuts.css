@@ -54,3 +54,15 @@
 .i-b{
     font-size: 30px;
 }
+
+.t-s{
+    font-size: 5px;
+}
+
+.t-m{
+    font-size: 20px;
+}
+
+.t-blend{
+    mix-blend-mode:hue;
+}
